@@ -1,5 +1,5 @@
 import { FaDiscord, FaQuestionCircle } from 'react-icons/fa';
-import { DiscordLoginButton, SupportButton, HomePageStyle } from '../utils/styles/HomePage'
+import { DiscordLoginButton, SupportButton, HomePageStyle } from '../utils/styles/HomePageCSS'
 
 export const HomePage = () => (
   <HomePageStyle>
