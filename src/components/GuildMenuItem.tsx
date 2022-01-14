@@ -1,4 +1,4 @@
-import { GuildMenuItemStyle } from '../utils/styles/MenuPageCSS';
+import { GuildMenuItemStyle } from '../utils/styles';
 
 type Props = {
   guild: {

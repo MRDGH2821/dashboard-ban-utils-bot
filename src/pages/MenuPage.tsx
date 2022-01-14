@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { GuildContext } from '../utils/contexts/GuildContext';
 import { useContext } from 'react';
 import { GuildMenuItem } from '../components/GuildMenuItem'
-import { Container } from '../utils/styles/MenuPageCSS'
+import { Container } from '../utils/styles'
 
 export const MenuPage = () => {
   const navigate = useNavigate();
