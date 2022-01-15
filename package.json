@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/MRDGH2821/dashboard-ban-utils-bot/issues"
   },
-  "homepage": "https://github.com/MRDGH2821/dashboard-ban-utils-bot#readme",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
