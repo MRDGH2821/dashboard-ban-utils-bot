@@ -104,3 +104,31 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
 `;
+
+type ButtonProps = {
+  varient: 'primary' | 'secondary';
+}
+
+export const Button = styled.button<ButtonProps>`
+padding: 10px 20px;
+outline: none;
+border: none;
+font-size: 14px;
+color: #ffffff;
+${({ varient }) => varient === 'primary' && css`
+background-color: #5865f2;
+`}
+${({ varient }) => varient === 'secondary' && css`
+background-color: #3d3d3d;
+`}
+`;
+
+export const Page = styled.div`
+padding: 50px;
+`;
+
+export const Select = styled.select`
+padding: 10px;
+background-color: #FFF;
+border-radius: 5px;
+`;
