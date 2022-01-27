@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { GuildContext } from '../utils/contexts/GuildContext';
 import { useContext } from 'react';
 import { GuildMenuItem } from '../components/GuildMenuItem'
-import { Container } from '../utils/styles'
+import { Container, Page } from '../utils/styles'
 
 export const MenuPage = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export const MenuPage = () => {
     navigate('/dashboard/categories')
   }
   return (
-    <div style={{ padding: '50px 0' }}>
+    <Page>
       <Container>
         <h1>Select a Server</h1>
         {mockGuilds.map((guild) => (
@@ -22,6 +22,6 @@ export const MenuPage = () => {
             <GuildMenuItem guild={guild} />
           </div>))}
       </Container>
-    </div >
+    </Page >
   )
 }

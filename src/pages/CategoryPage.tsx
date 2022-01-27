@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { GuildContext } from '../utils/contexts/GuildContext'
-import { Container, Title, Flex, TextButton, Grid } from '../utils/styles'
+import { Container, Title, Flex, TextButton, Grid, Page } from '../utils/styles'
 import { IoSettingsOutline } from 'react-icons/io5'
 import { useNavigate } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ export const CategoryPage = () => {
   const { guildId } = useContext(GuildContext);
   const navigate = useNavigate();
   return (
-    <div style={{ padding: '50px 0' }}>
+    <Page>
       <Container>
         <div>
           <Flex alignItems="center" justifyContent="space-between">
@@ -25,6 +25,6 @@ export const CategoryPage = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </Page>
   )
 };
