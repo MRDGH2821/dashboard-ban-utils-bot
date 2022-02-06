@@ -7,7 +7,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "commit": "cz"
+    "commit": "cz",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "postformat": "npm run lint"
   },
   "config": {
     "commitizen": {
@@ -40,6 +43,7 @@
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "axios": "^0.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
