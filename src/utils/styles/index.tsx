@@ -39,7 +39,6 @@ export const MainButton = styled.div`
   box-shadow: 0px 1px 5px 0px #00000018;
 `;
 
-
 export const TextButton = styled(MainButton)`
 padding: 18px 20px;
 width: 300px;
@@ -55,7 +54,6 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 `;
-
 
 export const GuildMenuItemStyle = styled.div`
 display: flex;
@@ -107,7 +105,7 @@ export const Grid = styled.div`
 
 type ButtonProps = {
   varient: 'primary' | 'secondary';
-}
+};
 
 export const Button = styled.button<ButtonProps>`
 padding: 10px 20px;
@@ -115,10 +113,14 @@ outline: none;
 border: none;
 font-size: 14px;
 color: #ffffff;
-${({ varient }) => varient === 'primary' && css`
+${({ varient }) =>
+  varient === 'primary' &&
+  css`
 background-color: #5865f2;
 `}
-${({ varient }) => varient === 'secondary' && css`
+${({ varient }) =>
+  varient === 'secondary' &&
+  css`
 background-color: #3d3d3d;
 `}
 `;

@@ -78,6 +78,8 @@
     "@types/styled-components": "^5.1.20",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.8.0",
+    "prettier": "^2.5.1",
     "prettier-config-mrdgh2821": "^1.0.0"
   }
 }

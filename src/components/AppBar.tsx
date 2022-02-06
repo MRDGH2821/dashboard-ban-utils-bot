@@ -9,14 +9,15 @@ export const AppBar = () => {
       <AppBarStyle>
         <h1 style={{ fontWeight: 'normal', fontSize: '20px' }}>Configuring</h1>
         <img
-          src="https://www.gubbies.dk/wp-content/uploads/2016/03/icon7-1.png"
+          src='https://www.gubbies.dk/wp-content/uploads/2016/03/icon7-1.png'
           height={55}
           width={55}
           style={{
-            borderRadius: '50%'
+            borderRadius: '50%',
           }}
-          alt="logo" />
+          alt='logo'
+        />
       </AppBarStyle>
     </div>
-  )
-}
+  );
+};
