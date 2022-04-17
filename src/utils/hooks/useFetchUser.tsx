@@ -18,7 +18,7 @@ export function useFetchUser() {
         console.log(err);
         setError(err);
       })
-      .finally(() => setLoading(false));
+      .finally(() => setTimeout(() => setLoading(false), 1000));
   }, []);
 
   return { user, error, loading };

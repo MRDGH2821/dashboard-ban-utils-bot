@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const DiscordLoginButton = styled.div`
 display: flex;
@@ -133,4 +133,16 @@ export const Select = styled.select`
 padding: 10px;
 background-color: #FFF;
 border-radius: 5px;
+`;
+
+export const Overlay = styled.div`
+height: 100%;
+width: 100%;
+background-color: #0000006c
+display: flex;
+justify-content: center;
+align-items: fixed;
+position: fixed;
+top: 0;
+left: 0;
 `;

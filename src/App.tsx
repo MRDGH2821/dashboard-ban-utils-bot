@@ -7,14 +7,18 @@ import { LogsPage } from './pages/LogsPage';
 import { GuildContext } from './utils/contexts/GuildContext';
 import { AppBar } from './components/AppBar';
 import { useFetchUser } from './utils/hooks/useFetchUser';
+import { Spinner } from './components/Spinner';
+import { BarLoader } from 'react-spinners';
 
 function App() {
   const [guildId, setGuildId] = useState('');
   const { user, error, loading } = useFetchUser();
   const updateGuildId = (id: string) => setGuildId(id);
+
+  if (loading) return <Spinner children={<BarLoader color='white' />} />;
   return (
     <GuildContext.Provider value={{ guildId, updateGuildId }}>
-      {user ? (
+      {user && !error ? (
         <>
           <Routes>
             <Route path='/dashboard/*' element={<AppBar />} />
@@ -31,6 +35,7 @@ function App() {
         <>
           <Routes>
             <Route path='/' element={<LoginPage />} />
+            <Route path='*' element={<div>Not Found</div>} />
           </Routes>
         </>
       )}
